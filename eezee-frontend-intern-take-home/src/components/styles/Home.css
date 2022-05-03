@@ -1,4 +1,1 @@
-.layout {
-    position: relative;
-    background: #F5F5F7;
-}
+@import '~antd/dist/antd.css';
