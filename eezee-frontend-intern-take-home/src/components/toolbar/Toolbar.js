@@ -1,12 +1,21 @@
 import { Row, Col, Badge, Button, Input } from 'antd';
 import React, { useEffect, useState } from 'react'
 import { ReactComponent as LogoOnWhite } from '../../assets/Images/Common/LogoOnWhite.svg';
-import Icon, { SearchOutlined, ShoppingCartOutlined } from '@ant-design/icons';
+import { SearchOutlined, ShoppingCartOutlined } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
 import "../styles/Toolbar.css";
 
 export default function Toolbar(props) {
-
+    if (!sessionStorage.getItem('cart')) {
+        sessionStorage.setItem('cart', 0)
+    }
+    const [count, setCount] = useState(JSON.parse(sessionStorage.cart));
+    useEffect(() => {
+        const item = sessionStorage.getItem('cart')
+        if (item) {
+            setCount(item)
+        }
+    }, [props.event])
     return (
         <>
             <Row align='middle' className='navbarbase'>
@@ -34,7 +43,7 @@ export default function Toolbar(props) {
                 <Col offset={6}>
                     <Badge
                         style={{ backgroundColor: '#2A64DB' }}
-                        count={0}
+                        count={count}
                         showZero
                     >
                         <ShoppingCartOutlined style={{ fontSize: '32px' }} />
