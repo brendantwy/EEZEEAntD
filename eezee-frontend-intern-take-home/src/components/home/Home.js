@@ -1,15 +1,19 @@
 import { Layout, Row, Col, Card, AutoComplete, Typography } from 'antd';
 import Navbar from '../navbar/Navbar';
 import Toolbar from '../toolbar/Toolbar';
-import { ReactComponent as Banner } from "../../assets/images/Banner.svg";
+import { ReactComponent as Banner } from "../../assets/Images/Common/Banner.svg";
 import { RightOutlined } from '@ant-design/icons'
-import { featured } from '../../assets/json/FeaturedBrands';
-import { popular } from '../../assets/json/PopularProducts';
+import { featured } from '../../assets/Data/FeaturedBrands';
+import { popular } from '../../assets/Data/PopularProducts';
+import { Link, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 const { Content } = Layout;
 const { Meta } = Card;
 
 export default function Home() {
+    const navigate = useNavigate();
+
     return (
         <Layout >
             <Navbar className="navbar" />
@@ -74,22 +78,26 @@ export default function Home() {
                         </Typography.Text>
                     </Col>
                 </Row>
-                <div style={{ paddingLeft: '400px' }}>
+                <div style={{ paddingLeft: '400px', paddingBottom: '87.5px' }}>
                     <Row gutter={10}>
                         {popular.map(product => {
                             return (
-                                <Col>
-                                    <Card style={{ textAlign: 'left', width: '193px', height: '333px' }}
-                                        cover={
-                                            <div style={{ height: "175px", width: '175px', display: 'flex' }}>
-                                                <img alt="" src={product.path} style={{ margin: 'auto' }} />
-                                            </div>
-                                        }
-                                        bordered={false}
-                                    >
-                                        <Meta title={<div style={{ color: '#2A64DB', float: 'left' }}><sup>S$</sup>{product.price}</div>} description={<b>{product.description}</b>} />
-                                    </Card>
-                                </Col>
+                                <div key={product.id}>
+                                    <Col>
+                                        <Link to={`/product/${product.id}`}>
+                                            <Card style={{ textAlign: 'left', width: '193px', height: '333px' }}
+                                                cover={
+                                                    <div style={{ height: "175px", width: '175px', display: 'flex' }}>
+                                                        <img alt="" src={product.path} style={{ height: "175px", width: '175px' }} />
+                                                    </div>
+                                                }
+                                                bordered={false}
+                                            >
+                                                <Meta title={<div style={{ color: '#2A64DB', float: 'left' }}><sup>S$</sup>{product.price}</div>} description={<b>{product.description}</b>} />
+                                            </Card>
+                                        </Link>
+                                    </Col>
+                                </div>
                             );
                         }
                         )}

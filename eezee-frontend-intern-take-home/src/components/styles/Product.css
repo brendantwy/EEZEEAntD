@@ -1,0 +1,27 @@
+@import '~antd/dist/antd.css';
+
+.btnSelected {
+    width: 60px;
+    height: 40px;
+    margin: 20px;
+    border: solid 1px blue;
+}
+
+
+.btnNorm {
+    width: 60px;
+    height: 40px;
+    margin: 20px;
+    border: 0;
+}
+
+.hi {
+    /* divider-line */
+
+
+    position: static;
+    left: 5.25%;
+    right: 5.25%;
+    top: 78.38%;
+    bottom: 21.62%;
+}

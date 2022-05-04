@@ -1,8 +1,9 @@
 import { Row, Col, Badge, Button, Input } from 'antd';
 import React, { useEffect, useState } from 'react'
-import { ReactComponent as LogoOnWhite } from '../../assets/images/LogoOnWhite.svg';
-import Icon, { SearchOutlined, ShoppingCartOutlined } from '@ant-design/icons'
-import "../styles/Toolbar.css"
+import { ReactComponent as LogoOnWhite } from '../../assets/Images/Common/LogoOnWhite.svg';
+import Icon, { SearchOutlined, ShoppingCartOutlined } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
+import "../styles/Toolbar.css";
 
 export default function Toolbar(props) {
 
@@ -10,7 +11,9 @@ export default function Toolbar(props) {
         <>
             <Row align='middle' className='navbarbase'>
                 <Col span={2} offset={5}>
-                    <LogoOnWhite className='logo' />
+                    <Link to={`/`}>
+                        <LogoOnWhite className='logo' />
+                    </Link>
                 </Col>
                 <Col offset={1}>
                     <Input

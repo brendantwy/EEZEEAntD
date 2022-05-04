@@ -2,31 +2,31 @@ export const featured = [
     {
         "id": "1",
         "title": "ABB",
-        "path": require("../images/LogoABB.png")
+        "path": require("../Images/Featured/LogoABB.png")
     },
     {
         "id": "2",
         "title": "AURALIGHT",
-        "path": require("../images/Logoauralight.png")
+        "path": require("../Images/Featured/Logoauralight.png")
     },
     {
         "id": "3",
         "title": "PELICAN",
-        "path": require("../images/Logopelican.png")
+        "path": require("../Images/Featured/Logopelican.png")
     },
     {
         "id": "4",
         "title": "MK",
-        "path": require("../images/LogoMK.png")
+        "path": require("../Images/Featured/LogoMK.png")
     },
     {
         "id": "5",
         "title": "LYSAGHT",
-        "path": require("../images/Logolysaght.png")
+        "path": require("../Images/Featured/Logolysaght.png")
     },
     {
         "id": "6",
         "title": "EATON",
-        "path": require("../images/LogoEATON.png")
+        "path": require("../Images/Featured/LogoEATON.png")
     }
 ]
