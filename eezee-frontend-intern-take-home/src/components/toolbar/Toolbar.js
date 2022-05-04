@@ -9,10 +9,10 @@ export default function Toolbar(props) {
     return (
         <>
             <Row align='middle' className='navbarbase'>
-                <Col span={1} offset={2}>
+                <Col span={4} offset={5}>
                     <LogoOnWhite className='logo' />
                 </Col>
-                <Col span={1} offset={3}>
+                <Col offset={1}>
                     <Input
                         className='searchbar'
                         style={{ borderRadius: '25px' }}
@@ -27,7 +27,7 @@ export default function Toolbar(props) {
                         }
                     />
                 </Col>
-                <Col offset={14}>
+                <Col span={4} offset={3}>
                     <Badge
                         style={{ backgroundColor: '#2A64DB' }}
                         count={0}
@@ -38,7 +38,7 @@ export default function Toolbar(props) {
                 </Col>
             </Row>
             <Row className='viewallbrands'>
-                <Col offset={2} span={3}>
+                <Col offset={5} span={5}>
                     <a href=''>View All Brands</a>
                 </Col>
             </Row>

@@ -1,4 +1,4 @@
-export const hello = [
+export const featured = [
     {
         "id": "1",
         "title": "ABB",
