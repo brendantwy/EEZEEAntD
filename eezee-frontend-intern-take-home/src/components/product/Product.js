@@ -82,7 +82,7 @@ export function Product(props) {
                                             alt=''
                                             src={pics}
                                             className={
-                                                selected === index ? 'btnSelected' : 'btnNorm'
+                                                selected === index ? 'selected' : 'notselected'
                                             }
                                             onClick={() => {
                                                 goTo(index)
