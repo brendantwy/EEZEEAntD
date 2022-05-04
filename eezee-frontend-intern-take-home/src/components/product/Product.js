@@ -32,8 +32,6 @@ export function Product(props) {
         }
     }
 
-
-
     return (<Layout>
         <Navbar />
         <Toolbar />
@@ -135,6 +133,5 @@ export function Product(props) {
                 </Col>
             </Row>
         </Content>
-    </Layout>)
-        ;
+    </Layout>);
 }
