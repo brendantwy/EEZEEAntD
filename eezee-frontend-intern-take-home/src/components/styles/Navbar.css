@@ -94,9 +94,21 @@
     top: 0px;
 }
 
+.phoneoutlined {
+    position: absolute;
+    left: 10.94%;
+    right: 10.94%;
+    top: 10.94%;
+    bottom: 10.93%;
+}
+
 .phonenum {
     /* +65 6797 9688 */
-
+    position: static;
+    left: 21.67%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
 
 
     /* d-body */

@@ -12,7 +12,7 @@ export default function Navbar() {
                     <Typography className='countryname'>Singapore</Typography>
                 </Col>
                 <Col className='contact'>
-                    <PhoneOutlined />
+                    <PhoneOutlined className='phoneoutlined' />
                     <Typography className='phonenum'>+65 6797 9688</Typography>
                 </Col>
             </Row>

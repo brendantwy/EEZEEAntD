@@ -1,0 +1,17 @@
+@import '~antd/dist/antd.css';
+
+
+
+.navbarbase {
+    height: 80px;
+    background: #FFFFFF;
+}
+
+.searchbar {
+    width: 460px;
+    height: 40px;
+}
+
+.viewallbrands {
+    background: #FFFFFF;
+}

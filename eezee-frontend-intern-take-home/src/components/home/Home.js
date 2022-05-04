@@ -1,14 +1,17 @@
-import { Layout, Row, Col } from 'antd';
+import { Layout } from 'antd';
 import Navbar from '../navbar/Navbar';
-const { Header, Content } = Layout;
+import Toolbar from '../toolbar/Toolbar';
+
+
+const { Content } = Layout;
 
 export default function Home() {
     return (
         <Layout>
             <Navbar className="navbar" />
-            <Content style={{ padding: '0 50px' }}>
-                <div className="site-layout-content">Content</div>
-            </Content>
+
+            <Toolbar className='toolbar' />
+
         </Layout>
     );
 }
