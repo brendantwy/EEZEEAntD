@@ -11,6 +11,7 @@ export const popular = [
         "price": "94.34",
         "description": "04900008100 Philips Mhn-td 70w/842 Rx7s",
         "path": require("../images/Product2.png")
+
     },
 
     {

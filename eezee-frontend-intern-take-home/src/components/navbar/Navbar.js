@@ -5,17 +5,16 @@ import "../styles/Navbar.css";
 
 export default function Navbar() {
     return (
-        <Row className='nav' >
-            <Row justify="space-around" align="middle" className='container'>
-                <Col className='country'>
-                    <SgFlag className='flag' />
-                    <Typography className='countryname'>Singapore</Typography>
-                </Col>
-                <Col className='contact'>
-                    <PhoneOutlined className='phoneoutlined' />
-                    <Typography className='phonenum'>+65 6797 9688</Typography>
-                </Col>
-            </Row>
+        <Row className='nav' align="middle" >
+            {/* <Row  className='container'> */}
+            <Col span={2} offset={7}>
+                <SgFlag className='flag' />
+                <Typography.Text style={{ marginLeft: '7px' }}>Singapore</Typography.Text>
+            </Col>
+            <Col span={2} >
+                <PhoneOutlined />
+                <Typography.Text style={{ marginLeft: '10px' }}>+65 6797 9688</Typography.Text>
+            </Col>
         </Row >
     );
 }

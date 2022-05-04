@@ -9,7 +9,7 @@ export default function Toolbar(props) {
     return (
         <>
             <Row align='middle' className='navbarbase'>
-                <Col span={4} offset={5}>
+                <Col span={2} offset={5}>
                     <LogoOnWhite className='logo' />
                 </Col>
                 <Col offset={1}>
@@ -25,9 +25,10 @@ export default function Toolbar(props) {
                                 icon={<SearchOutlined />}
                             />
                         }
+                        placeholder='Search Products Here'
                     />
                 </Col>
-                <Col span={4} offset={3}>
+                <Col offset={6}>
                     <Badge
                         style={{ backgroundColor: '#2A64DB' }}
                         count={0}
