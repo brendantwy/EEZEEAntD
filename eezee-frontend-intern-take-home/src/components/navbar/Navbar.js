@@ -9,9 +9,9 @@ export default function Navbar() {
             {/* <Row  className='container'> */}
             <Col span={2} offset={7}>
                 <SgFlag className='flag' />
-                <Typography.Text style={{ marginLeft: '7px' }}>Singapore</Typography.Text>
+                Singapore
             </Col>
-            <Col span={2} >
+            <Col >
                 <PhoneOutlined />
                 <Typography.Text style={{ marginLeft: '10px' }}>+65 6797 9688</Typography.Text>
             </Col>

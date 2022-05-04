@@ -15,7 +15,7 @@ export default function Home() {
             <Navbar className="navbar" />
             <Toolbar className='toolbar' />
             <Content className='content'>
-                <Row style={{ padding: '20px' }}>
+                <Row style={{ paddingTop: '20px' }}>
                     <Col offset={5} span={14}>
                         <Banner />
                     </Col>
